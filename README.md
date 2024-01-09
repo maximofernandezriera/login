@@ -4,7 +4,7 @@
 - **Parámetros de Entrada y Salida**: intentos.
 - **Dato Devuelto**: Valor lógico indicando si ha hecho login.
 
-\```markdown
+```markdown
 Funcion eslogin <- Login(nombre, pass, intentos por referencia)
     Definir eslogin Como Logico;
     Si nombre = "usuario1" Y pass = "asdasd" Entonces
@@ -14,13 +14,13 @@ Funcion eslogin <- Login(nombre, pass, intentos por referencia)
         intentos <- intentos + 1;
     FinSi
 FinFuncion
-\```
+```
 
 ### Descripción del Proceso EntrarEnElSistema
 - **Objetivo**: Crear una subrutina llamada "Login", que recibe un nombre de usuario y una contraseña y devuelve Verdadero si el nombre de usuario es "usuario1" y la contraseña es "asdasd". Además, recibe el número de intentos que se ha intentado hacer login y, si no se ha podido hacer login, incrementa este valor.
 - **Programa Principal**: Se pide un nombre de usuario y una contraseña y se intenta hacer login, teniendo solo tres oportunidades para intentarlo.
 
-\```markdown
+```markdown
 Proceso EntrarEnElSistema
     Definir usuario, clave Como Caracter;
     Definir cuantasveces como entero;
@@ -42,7 +42,7 @@ Proceso EntrarEnElSistema
         Escribir "No has entrado en el sistema";
     FinSi
 FinProceso
-\```
+```
 
 ### 1. Pseudocódigo para la Conversión de un Número Decimal a Binario
 ```markdown
