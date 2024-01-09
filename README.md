@@ -31,7 +31,7 @@ Proceso EntrarEnElSistema
         Leer usuario;
         Escribir Sin Saltar "Password:";
         Leer clave;
-        entrar <- Login(usuario, clave, cuantasveces);
+        entrar <- esLogin(usuario, clave, cuantasveces);
         Si no entrar Entonces
             Escribir "Error. Nombre de usuario o contraseña incorrecta.";
         FinSi
