@@ -1,4 +1,3 @@
-
 ### Función Login
 - **Descripción**: Recibe un nombre de usuario y una contraseña, y devuelve un valor lógico: verdadero si se ha introducido el nombre y la contraseña adecuadas. Además, incrementa el número de intentos que recibe como parámetro de entrada/salida.
 - **Parámetros de Entrada**: nombre y contraseña.
