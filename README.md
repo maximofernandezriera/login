@@ -90,3 +90,54 @@
 - Imprimir en consola "Has de fer " + viatges + " viatges."
 #### Fin del Método
 ```
+#### Paquete codigo
+
+- Importar utilidades Arrays y Scanner
+
+#### Clase Main
+
+##### Método main (argumentos: cadena de texto args)
+- Crear objeto Scanner sc para leer desde consola
+- Imprimir en consola "Longitud de la combinación secreta: "
+- Leer longitud como entero
+- Declarar combSecreta como tabla de enteros de tamaño longitud
+- Declarar combJugador como tabla de enteros de tamaño longitud
+
+- Llamar a generaCombinacion y pasar combSecreta
+- Imprimir combSecreta
+- Imprimir en consola "Escriba una combinación"
+- Llamar a leeTabla y pasar combJugador
+
+- Mientras combSecreta no sea igual a combJugador
+  - Llamar a muestraPistas y pasar combSecreta y combJugador
+  - Imprimir en consola "Escriba una combinación: "
+  - Llamar a leeTabla y pasar combJugador
+- Fin del Mientras
+
+- Imprimir en consola "¡La cámara está abierta!"
+
+##### Método generaCombinacion (argumento: tabla de enteros t)
+- Declarar constante MAX con valor 5
+- Para cada elemento en t
+  - Asignar a t[i] un valor entero aleatorio entre 1 y MAX
+- Fin del Para
+
+##### Método leeTabla (argumento: tabla de enteros t)
+- Crear objeto Scanner sc para leer desde consola
+- Para cada elemento en t
+  - Leer t[i] como entero
+- Fin del Para
+
+##### Método muestraPistas (argumentos: tabla de enteros secret, tabla de enteros jug)
+- Imprimir en consola "Pistas:"
+- Para cada elemento en jug
+  - Imprimir jug[i]
+  - Si secret[i] es mayor que jug[i]
+    - Imprimir " mayor"
+  - Sino Si secret[i] es menor que jug[i]
+    - Imprimir " menor"
+  - Sino
+    - Imprimir " igual"
+- Fin del Para
+
+#### Fin de la Clase Main
