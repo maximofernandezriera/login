@@ -16,15 +16,15 @@ Funcion login <- esLogin(nombre, pass, intentos por referencia)
 FinFuncion
 ```
 
-### Descripción del Proceso EntrarEnElSistema
+### Descripción del Proceso de Login
 - **Objetivo**: Crear una subproceso llamada "Login", que recibe un nombre de usuario y una contraseña y devuelve Verdadero si el nombre de usuario es "usuario1" y la contraseña es "asdasd". Además, recibe el número de intentos que se ha intentado hacer login y, si no se ha podido hacer login, incrementa este valor.
 - **Programa Principal**: Se pide un nombre de usuario y una contraseña y se intenta hacer login, teniendo solo tres oportunidades para intentarlo.
 
 ```markdown
 Proceso EntrarEnElSistema
-    Definir usuario, clave Como Caracter;
-    Definir cuantasveces como entero;
-    Definir entrar como Logico;
+    Definir usuario, clave Caracter;
+    Definir cuantasveces entero;
+    Definir entrar Logico;
     cuantasveces <- 0;
     Repetir
         Escribir "Usuario:";
