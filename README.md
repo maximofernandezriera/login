@@ -26,6 +26,7 @@ Proceso EntrarEnElSistema
     Definir cuantasveces entero;
     Definir entrar Logico;
     cuantasveces <- 0;
+
     Repetir
         Escribir "Usuario:";
         Leer usuario;
@@ -36,6 +37,7 @@ Proceso EntrarEnElSistema
             Escribir "Error. Nombre de usuario o contraseña incorrecta.";
         FinSi
     Hasta Que entrar o cuantasveces = 3;
+
     Si entrar Entonces
         Escribir "Bienvenidos al sistema";
     SiNo
