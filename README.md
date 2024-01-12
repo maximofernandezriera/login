@@ -45,3 +45,35 @@ Proceso EntrarEnElSistema
     FinSi
 FinProceso
 ```
+```markdown
+import java.util.Scanner;
+
+public class Login {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String usuario, clave;
+        int cuantasveces = 0;
+        boolean entrar = false;
+
+        while (!entrar && cuantasveces < 3) {
+            System.out.print("Usuario: ");
+            usuario = scanner.nextLine();
+            System.out.print("Password: ");
+            clave = scanner.nextLine();
+
+            entrar = esLogin(usuario, clave, cuantasveces);
+
+            if (!entrar) {
+                System.out.println("Error. Nombre de usuario o contraseña incorrecta.");
+            }
+
+            cuantasveces++;
+        }
+
+        if (entrar) {
+            System.out.println("Bienvenidos al sistema");
+        } else {
+            System.out.println("No has entrado en el sistema");
+        }
+    }
+```
