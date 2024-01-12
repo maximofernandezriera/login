@@ -6,7 +6,7 @@
 
 ```markdown
 Funcion login <- esLogin(nombre, pass, intentos por referencia)
-    Definir eslogin Como Logico;
+    Definir eslogin Logico;
     Si nombre = "usuario1" Y pass = "asdasd" Entonces
         eslogin <- Verdadero;
     SiNo
